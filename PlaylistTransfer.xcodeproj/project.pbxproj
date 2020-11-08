@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81B0C854255301A800FC77C4 /* PlatformMusicTransferApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B0C853255301A800FC77C4 /* PlatformMusicTransferApp.swift */; };
+		81878B0E25544510009A437C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81878B0D25544510009A437C /* Settings.swift */; };
+		81878B1125544522009A437C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81878B1025544522009A437C /* HomeView.swift */; };
+		819B7D722553154E000C40DB /* Webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819B7D712553154E000C40DB /* Webview.swift */; };
+		819B7D78255315E4000C40DB /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819B7D77255315E4000C40DB /* URLExtension.swift */; };
+		819B7D7C25531660000C40DB /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819B7D7B25531660000C40DB /* NetworkUtils.swift */; };
+		81B0C854255301A800FC77C4 /* PlaylistTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B0C853255301A800FC77C4 /* PlaylistTransfer.swift */; };
 		81B0C856255301A800FC77C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B0C855255301A800FC77C4 /* ContentView.swift */; };
 		81B0C858255301AA00FC77C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B0C857255301AA00FC77C4 /* Assets.xcassets */; };
 		81B0C85B255301AA00FC77C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81B0C85A255301AA00FC77C4 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		81B0C850255301A800FC77C4 /* PlatformMusicTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlatformMusicTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		81B0C853255301A800FC77C4 /* PlatformMusicTransferApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformMusicTransferApp.swift; sourceTree = "<group>"; };
+		81878B0D25544510009A437C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		81878B1025544522009A437C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		819B7D712553154E000C40DB /* Webview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webview.swift; sourceTree = "<group>"; };
+		819B7D77255315E4000C40DB /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		819B7D7B25531660000C40DB /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		81B0C850255301A800FC77C4 /* PlaylistTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaylistTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B0C853255301A800FC77C4 /* PlaylistTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTransfer.swift; sourceTree = "<group>"; };
 		81B0C855255301A800FC77C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81B0C857255301AA00FC77C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81B0C85A255301AA00FC77C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -33,10 +43,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		819B7D7025531502000C40DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81B0C855255301A800FC77C4 /* ContentView.swift */,
+				819B7D712553154E000C40DB /* Webview.swift */,
+				81878B0D25544510009A437C /* Settings.swift */,
+				81878B1025544522009A437C /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		819B7D76255315C8000C40DB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				819B7D77255315E4000C40DB /* URLExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		819B7D7A2553162C000C40DB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				819B7D7B25531660000C40DB /* NetworkUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		81B0C847255301A800FC77C4 = {
 			isa = PBXGroup;
 			children = (
-				81B0C852255301A800FC77C4 /* PlatformMusicTransfer */,
+				81B0C852255301A800FC77C4 /* PlaylistTransfer */,
 				81B0C851255301A800FC77C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,21 +81,23 @@
 		81B0C851255301A800FC77C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				81B0C850255301A800FC77C4 /* PlatformMusicTransfer.app */,
+				81B0C850255301A800FC77C4 /* PlaylistTransfer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		81B0C852255301A800FC77C4 /* PlatformMusicTransfer */ = {
+		81B0C852255301A800FC77C4 /* PlaylistTransfer */ = {
 			isa = PBXGroup;
 			children = (
-				81B0C853255301A800FC77C4 /* PlatformMusicTransferApp.swift */,
-				81B0C855255301A800FC77C4 /* ContentView.swift */,
+				819B7D7A2553162C000C40DB /* Utils */,
+				819B7D76255315C8000C40DB /* Extensions */,
+				819B7D7025531502000C40DB /* Views */,
+				81B0C853255301A800FC77C4 /* PlaylistTransfer.swift */,
 				81B0C857255301AA00FC77C4 /* Assets.xcassets */,
 				81B0C85C255301AA00FC77C4 /* Info.plist */,
 				81B0C859255301AA00FC77C4 /* Preview Content */,
 			);
-			path = PlatformMusicTransfer;
+			path = PlaylistTransfer;
 			sourceTree = "<group>";
 		};
 		81B0C859255301AA00FC77C4 /* Preview Content */ = {
@@ -72,9 +111,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		81B0C84F255301A800FC77C4 /* PlatformMusicTransfer */ = {
+		81B0C84F255301A800FC77C4 /* PlaylistTransfer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81B0C85F255301AA00FC77C4 /* Build configuration list for PBXNativeTarget "PlatformMusicTransfer" */;
+			buildConfigurationList = 81B0C85F255301AA00FC77C4 /* Build configuration list for PBXNativeTarget "PlaylistTransfer" */;
 			buildPhases = (
 				81B0C84C255301A800FC77C4 /* Sources */,
 				81B0C84D255301A800FC77C4 /* Frameworks */,
@@ -84,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = PlatformMusicTransfer;
+			name = PlaylistTransfer;
 			productName = PlatformMusicTransfer;
-			productReference = 81B0C850255301A800FC77C4 /* PlatformMusicTransfer.app */;
+			productReference = 81B0C850255301A800FC77C4 /* PlaylistTransfer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +142,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 81B0C84B255301A800FC77C4 /* Build configuration list for PBXProject "PlatformMusicTransfer" */;
+			buildConfigurationList = 81B0C84B255301A800FC77C4 /* Build configuration list for PBXProject "PlaylistTransfer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,7 +155,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				81B0C84F255301A800FC77C4 /* PlatformMusicTransfer */,
+				81B0C84F255301A800FC77C4 /* PlaylistTransfer */,
 			);
 		};
 /* End PBXProject section */
@@ -138,8 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81878B0E25544510009A437C /* Settings.swift in Sources */,
+				81878B1125544522009A437C /* HomeView.swift in Sources */,
+				819B7D722553154E000C40DB /* Webview.swift in Sources */,
+				819B7D78255315E4000C40DB /* URLExtension.swift in Sources */,
+				819B7D7C25531660000C40DB /* NetworkUtils.swift in Sources */,
 				81B0C856255301A800FC77C4 /* ContentView.swift in Sources */,
-				81B0C854255301A800FC77C4 /* PlatformMusicTransferApp.swift in Sources */,
+				81B0C854255301A800FC77C4 /* PlaylistTransfer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,16 +312,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"PlatformMusicTransfer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PlaylistTransfer/Preview Content\"";
 				DEVELOPMENT_TEAM = 5V2DY97R54;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = PlatformMusicTransfer/Info.plist;
+				INFOPLIST_FILE = PlaylistTransfer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.dominikmack.PlatformMusicTransfer;
+				PRODUCT_BUNDLE_IDENTIFIER = org.dominikmack.PlaylistTransfer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,16 +334,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"PlatformMusicTransfer/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PlaylistTransfer/Preview Content\"";
 				DEVELOPMENT_TEAM = 5V2DY97R54;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = PlatformMusicTransfer/Info.plist;
+				INFOPLIST_FILE = PlaylistTransfer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.dominikmack.PlatformMusicTransfer;
+				PRODUCT_BUNDLE_IDENTIFIER = org.dominikmack.PlaylistTransfer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,7 +353,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		81B0C84B255301A800FC77C4 /* Build configuration list for PBXProject "PlatformMusicTransfer" */ = {
+		81B0C84B255301A800FC77C4 /* Build configuration list for PBXProject "PlaylistTransfer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				81B0C85D255301AA00FC77C4 /* Debug */,
@@ -318,7 +362,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81B0C85F255301AA00FC77C4 /* Build configuration list for PBXNativeTarget "PlatformMusicTransfer" */ = {
+		81B0C85F255301AA00FC77C4 /* Build configuration list for PBXNativeTarget "PlaylistTransfer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				81B0C860255301AA00FC77C4 /* Debug */,
